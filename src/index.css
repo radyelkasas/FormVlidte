@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-main {
+  background-image: url(../public/images/bg-main-desktop.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form .cardInput {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+form label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: hsl(278, 68%, 11%);
+}
+
+form input {
+  margin-top: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+form input:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+form span {
+  color: red;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+form button {
+  margin-top: 10px;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+form .Data {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+
+.card-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.card-add img {
+  max-width: 100%;
+}
+
+.card-add h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(278, 68%, 11%);
+}
+
+.card-add p {
+  max-width: 400px;
+  font-size: 18px;
+  color: hsl(279, 6%, 55%);
+  margin: 0;
+}
+
+.card-add a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.Card {
+  position: absolute;
+  background-image: url(../public/images/bg-card-front.png);
+  height: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 20%;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  padding: 10px;
+}
+
+.Card .circle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Card .circle .first {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.Card .circle .last {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: solid 1px white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.Card h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.Card .details {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-back img {
+  position: absolute;
+  max-width: 370px;
+  top: 50%;
+  left: 17%;
+  object-fit: contain;
+}
+
+@media(max-width:992px) {
+  .bg-main {
+    background-image: url(../public/images/bg-main-mobile.png);
+    background-size: cover;
+    height: 200px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  form {
+    margin-top: 100px;
+    width: 300px;
+  }
+
+  .card-add {
+    padding-top: 100px;
+  }
+
+  .Card {
+    left: 20px;
+    top: 12%;
+    width: 400px;
+    height: 250px;
+    z-index: 2;
+  }
+
+  .card-back img {
+    left: 22%;
+    top: -20px;
+    width: 400px;
+    height: 250px;
+    z-index: 1;
+  }
+}
