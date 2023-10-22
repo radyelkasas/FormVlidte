@@ -2,13 +2,13 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 import CardSide from "./components/CardSide";
 import FormSide from "./components/FormSide";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CardADD from "./components/CardADD";
 
 const Home = () => {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <Row className="flex-md-col">
           <Col lg={4} md={12} className="bg-main">
             <CardSide />
@@ -24,7 +24,7 @@ const Home = () => {
             </Routes>
           </Col>
         </Row>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };
