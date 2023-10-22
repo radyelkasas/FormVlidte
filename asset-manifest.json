@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/FormVlidte/static/css/main.d893e3de.css",
+    "main.js": "/FormVlidte/static/js/main.12578aa1.js",
+    "static/media/bg-main-desktop.png": "/FormVlidte/static/media/bg-main-desktop.806e7aa7b4dbc1d78bc3.png",
+    "static/media/bg-card-front.png": "/FormVlidte/static/media/bg-card-front.8153e2ca184402a8385f.png",
+    "static/media/bg-main-mobile.png": "/FormVlidte/static/media/bg-main-mobile.caa4689407777a312ede.png",
+    "index.html": "/FormVlidte/index.html",
+    "main.d893e3de.css.map": "/FormVlidte/static/css/main.d893e3de.css.map",
+    "main.12578aa1.js.map": "/FormVlidte/static/js/main.12578aa1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d893e3de.css",
+    "static/js/main.12578aa1.js"
+  ]
+}
